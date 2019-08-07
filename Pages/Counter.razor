@@ -1,0 +1,12 @@
+﻿@page "/counter"
+
+<p>Step 5: See the folloring message in the developer tools console:</p>
+<pre>
+Error: System.ArgumentException: There is no tracked object with id &#39;1&#39;. Perhaps the DotNetObjectRef instance was already disposed. (Parameter &#39;dotNetObjectId&#39;)
+   at Microsoft.JSInterop.DotNetObjectRefManager.FindDotNetObject(Int64 dotNetObjectId)
+   at Microsoft.JSInterop.DotNetDispatcher.BeginInvoke(String callId, String assemblyName, String methodIdentifier, Int64 dotNetObjectId, String argsJson)
+   at Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost.&lt;&gt;c__DisplayClass45_0.&lt;BeginInvokeDotNetFromJS&gt;b__0()
+   at Microsoft.AspNetCore.Components.Rendering.RendererSynchronizationContext.&lt;&gt;c.&lt;Invoke&gt;b__8_0(Object state)
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Components.Server.Circuits.CircuitHost.BeginInvokeDotNetFromJS(String callId, String assemblyName, String methodIdentifier, Int64 dotNetObjectId, String argsJson)
+</pre>
